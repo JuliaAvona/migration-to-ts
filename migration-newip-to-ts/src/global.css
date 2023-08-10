@@ -1,0 +1,154 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    color: #4c3f3f;
+    background: #ffffff;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+.sources {
+    display: griid;
+    flex-wrap: wrap;
+    width: 33%;
+    height: auto;
+    overflow: auto;
+    align-items: center;
+    font: 300 1em 'Fira Sans', sans-serif;
+    justify-content: end;
+}
+
+.news {
+    width: 63%;
+}
+
+header {
+    padding: 10px 30px;
+}
+
+header h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    color: #000000a1;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all;
+}
+
+header h1:hover {
+    color: #000000;
+    text-shadow: 1px 4px 4px #ffd641;
+}
+
+footer {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000000;
+    background-color: white;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    list-style: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #0000004a;
+    font-size: 10rem;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.5 ease;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.link-footer {
+    text-decoration: none;
+    color: #333;
+}
+
+footer .copyright {
+    font-size: 2rem;
+    color: #3333339c;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+footer .copyright a {
+    color: #3333339c;
+    text-decoration: none;
+}
+
+footer .copyright a:hover {
+    color: #555;
+}
+
+footer .copyright:before {
+    content: '©';
+}
+
+@media (max-width: 1170px) {
+    .source__item {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    .source__item-name {
+        font-size: 9px;
+    }
+
+    .source__item {
+        padding: 0.5rem;
+        word-wrap: break-word;
+    }
+
+    .news__description-content {
+        display: none;
+    }
+
+    .news__item .news__description h2 {
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        width: 50px;
+    }
+
+    .footer-item {
+        list-style: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 3rem;
+    }
+}

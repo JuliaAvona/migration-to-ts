@@ -1,0 +1,33 @@
+.source__item {
+    background: none;
+    border-radius: 5px;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    color: #3f2aff;
+    background-color: #ffffff;
+    transition: 0.5s;
+    cursor: pointer;
+    border: 1px solid #3f2aff;
+    display: flex;
+    justify-content: center;
+}
+
+.source__item:hover,
+.source__item:focus {
+    color: #fbfdfb;
+    transform: translateX(-0.1em);
+    background-color: #3f2aff;
+    ;
+}
+
+.source__item-name {
+    font-weight: 600;
+    white-space: wrap;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.5rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
